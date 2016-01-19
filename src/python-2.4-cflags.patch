@@ -1,0 +1,13 @@
+--- Makefile.pre.in	2016-01-19 16:15:40.000000000 +0000
++++ Makefile.pre.in	2016-01-19 16:15:22.000000000 +0000
+@@ -55,8 +55,8 @@
+ # Compiler options
+ OPT=		@OPT@
+ BASECFLAGS=	@BASECFLAGS@
++CFLAGS=		$(BASECFLAGS) $(OPT) @CFLAGS@
++CPPFLAGS=	-I. -I$(srcdir)/Include @CPPFLAGS@
+-CFLAGS=		$(BASECFLAGS) $(OPT)
+-CPPFLAGS=	-I. -I$(srcdir)/Include
+ LDFLAGS=	@LDFLAGS@
+ LDLAST=		@LDLAST@
+ SGI_ABI=	@SGI_ABI@
