@@ -3,6 +3,9 @@ Mac OS X
 
 Install XCode from the App Store.
 
+On El Capitan or above, install OpenSSL via MacPorts or Brew.
+
+
 
 GNU/Linux
 ---------
